@@ -4,12 +4,18 @@
 const projects = {
   gumma: {
     title: "Gumma",
-    images: ["assets/gumma-slides/1.jpg", "assets/gumma-slides/2.jpg"],
+    images: [
+      "assets/gumma-slides/1.jpg?v=20260820-2",
+      "assets/gumma-slides/2.jpg?v=20260820-2",
+    ],
     next: "plant",
   },
   plant: {
     title: "Plant",
-    images: ["assets/plant-slides/1.jpg", "assets/plant-slides/2.jpg"],
+    images: [
+      "assets/plant-slides/1.jpg?v=20260820-2",
+      "assets/plant-slides/2.jpg?v=20260820-2",
+    ],
     next: "gumma",
   },
 };

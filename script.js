@@ -3,8 +3,6 @@ const carousel = document.querySelector("[data-carousel]");
 if (carousel) {
   const slides = [...carousel.querySelectorAll("[data-slide]")];
   const dots = [...carousel.querySelectorAll("[data-carousel-dot]")];
-  const previousButton = carousel.querySelector("[data-carousel-prev]");
-  const nextButton = carousel.querySelector("[data-carousel-next]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const intervalDuration = 6000;
 
@@ -46,9 +44,6 @@ if (carousel) {
     window.clearInterval(timer);
     timer = null;
   }
-
-  previousButton.addEventListener("click", () => showSlide(currentIndex - 1));
-  nextButton.addEventListener("click", () => showSlide(currentIndex + 1));
 
   dots.forEach((dot) => {
     dot.addEventListener("click", () => {

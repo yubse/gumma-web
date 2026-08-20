@@ -99,7 +99,6 @@ button {
 .logo:focus-visible,
 .back-link:focus-visible,
 .slide-link:focus-visible,
-.carousel-arrow:focus-visible,
 .carousel-dot:focus-visible,
 .project-navigation a:focus-visible {
   outline: 2px solid currentColor;
@@ -164,45 +163,6 @@ button {
 .slide-link:hover img,
 .slide-link:focus-visible img {
   transform: scale(1.015);
-}
-
-.carousel-arrow {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  display: grid;
-  width: 52px;
-  height: 52px;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.76);
-  place-items: center;
-  cursor: pointer;
-  transform: translateY(-50%);
-  backdrop-filter: blur(6px);
-  transition: background-color 180ms ease, transform 180ms ease;
-}
-
-.carousel-arrow:hover {
-  background: var(--paper);
-  transform: translateY(-50%) scale(1.06);
-}
-
-.carousel-arrow svg {
-  width: 28px;
-  height: 28px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.35;
-}
-
-.carousel-arrow--prev {
-  left: clamp(18px, 3vw, 48px);
-}
-
-.carousel-arrow--next {
-  right: clamp(18px, 3vw, 48px);
 }
 
 .carousel-footer {
@@ -370,26 +330,6 @@ button {
   .slide-link img {
     max-width: 100%;
     max-height: calc(100svh - var(--header-height) - 108px);
-  }
-
-  .carousel-arrow {
-    top: auto;
-    bottom: 18px;
-    width: 42px;
-    height: 42px;
-    transform: none;
-  }
-
-  .carousel-arrow:hover {
-    transform: scale(1.06);
-  }
-
-  .carousel-arrow--prev {
-    left: 16px;
-  }
-
-  .carousel-arrow--next {
-    right: 16px;
   }
 
   .carousel-footer {
