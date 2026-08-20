@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gumma project details." />
+    <title>Project — Gumma</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="project.js" defer></script>
+  </head>
+  <body class="project-page">
+    <header class="site-header project-site-header">
+      <a class="back-link" href="./" aria-label="返回首页">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M20 7 11 16l9 9"></path>
+        </svg>
+      </a>
+
+      <a class="logo" href="./" aria-label="Gumma 首页">
+        <img src="assets/logo.png?v=20260819-2" alt="Gumma" />
+      </a>
+
+      <a
+        class="instagram-link"
+        href="https://www.instagram.com/gumma.art?igsh=MWczbzkza3F4bHZzZQ%3D%3D&amp;utm_source=qr"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="在新窗口打开 Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4.25"></circle>
+          <circle class="ig-dot" cx="17.4" cy="6.7" r="1"></circle>
+        </svg>
+      </a>
+    </header>
+
+    <main class="project-main">
+      <div class="project-gallery" data-project-gallery></div>
+
+      <nav class="project-navigation" aria-label="项目导航">
+        <a class="project-nav-link project-nav-link--back" href="./">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M20 7 11 16l9 9"></path>
+          </svg>
+          <span>返回</span>
+        </a>
+        <a class="project-nav-link project-nav-link--next" href="#top" data-next-project>
+          <span>下一个</span>
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="m12 7 9 9-9 9"></path>
+          </svg>
+        </a>
+      </nav>
+    </main>
+
+    <template id="gallery-item-template">
+      <figure class="gallery-item">
+        <img alt="" loading="lazy" decoding="async" />
+      </figure>
+    </template>
+  </body>
+</html>

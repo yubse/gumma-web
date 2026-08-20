@@ -6,6 +6,7 @@
     <meta name="description" content="Gumma illustration studio." />
     <title>Gumma</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -13,10 +14,9 @@
         <img src="assets/logo.png?v=20260819-2" alt="Gumma" />
       </a>
 
-      <!-- 把 href 替换成你自己的 Instagram 主页地址即可 -->
       <a
         class="instagram-link"
-        href="https://www.instagram.com/gumma.art?igsh=MWczbzkza3F4bHZzZQ%3D%3D&utm_source=qr"
+        href="https://www.instagram.com/gumma.art?igsh=MWczbzkza3F4bHZzZQ%3D%3D&amp;utm_source=qr"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="在新窗口打开 Instagram"
@@ -29,13 +29,87 @@
       </a>
     </header>
 
-    <main class="hero">
-      <img
-        class="hero-image"
-        src="assets/hero-meadow.png"
-        alt="Gumma 小熊手绘插画"
-        fetchpriority="high"
-      />
+    <main class="home-main">
+      <section
+        class="carousel"
+        aria-label="精选作品"
+        aria-roledescription="carousel"
+        data-carousel
+      >
+        <div class="carousel-stage" aria-live="polite">
+          <article
+            class="carousel-slide is-active"
+            aria-label="1 / 2"
+            aria-hidden="false"
+            data-slide
+          >
+            <a
+              class="slide-link"
+              href="project.html?project=gumma"
+              aria-label="查看 Gumma 小熊作品详情"
+            >
+              <img src="assets/1.jpg" alt="Gumma 手绘小熊" fetchpriority="high" />
+            </a>
+          </article>
+
+          <article
+            class="carousel-slide"
+            aria-label="2 / 2"
+            aria-hidden="true"
+            data-slide
+          >
+            <a
+              class="slide-link"
+              href="project.html?project=plant"
+              aria-label="查看 Gumma 植物作品详情"
+              tabindex="-1"
+            >
+              <img src="assets/2.jpg" alt="Gumma 手绘盆栽" loading="lazy" />
+            </a>
+          </article>
+        </div>
+
+        <button
+          class="carousel-arrow carousel-arrow--prev"
+          type="button"
+          aria-label="上一张作品"
+          data-carousel-prev
+        >
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M20 7 11 16l9 9"></path>
+          </svg>
+        </button>
+
+        <button
+          class="carousel-arrow carousel-arrow--next"
+          type="button"
+          aria-label="下一张作品"
+          data-carousel-next
+        >
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="m12 7 9 9-9 9"></path>
+          </svg>
+        </button>
+
+        <div class="carousel-footer">
+          <div class="carousel-dots" aria-label="选择作品">
+            <button
+              class="carousel-dot is-active"
+              type="button"
+              aria-label="显示第 1 张作品"
+              aria-current="true"
+              data-carousel-dot="0"
+            ></button>
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="显示第 2 张作品"
+              aria-current="false"
+              data-carousel-dot="1"
+            ></button>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
