@@ -1,5 +1,5 @@
 :root {
-  --paper: #fffdf8;
+  --paper: #fff;
   --ink: #161616;
   --muted: rgba(22, 22, 22, 0.55);
   --line: rgba(22, 22, 22, 0.16);
@@ -176,7 +176,7 @@ button {
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background: rgba(255, 253, 248, 0.76);
+  background: rgba(255, 255, 255, 0.76);
   place-items: center;
   cursor: pointer;
   transform: translateY(-50%);
