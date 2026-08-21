@@ -150,6 +150,13 @@ button {
   cursor: zoom-in;
 }
 
+.slide-link picture {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+
 .slide-link img {
   display: block;
   width: auto;
@@ -252,9 +259,14 @@ button {
   margin: 0;
 }
 
+.gallery-item picture {
+  display: block;
+  width: 100%;
+}
+
 .gallery-item img {
   display: block;
-  width: auto;
+  width: 100%;
   max-width: 100%;
   height: auto;
   max-height: none;

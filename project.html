@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Gumma project details." />
     <title>Project — Gumma</title>
-    <link rel="stylesheet" href="styles.css?v=20260821-3" />
-    <script src="project.js?v=20260821-3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260821-4" />
+    <script src="project.js?v=20260821-4" defer></script>
   </head>
   <body class="project-page">
     <header class="site-header project-site-header">
@@ -56,7 +56,10 @@
 
     <template id="gallery-item-template">
       <figure class="gallery-item">
-        <img alt="" loading="lazy" decoding="async" />
+        <picture>
+          <source type="image/webp" />
+          <img alt="" loading="lazy" decoding="async" />
+        </picture>
       </figure>
     </template>
   </body>
