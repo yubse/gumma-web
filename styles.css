@@ -266,6 +266,7 @@ button {
   width: 100%;
   height: auto;
   object-fit: contain;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .home-project--portrait .home-project-media img {
@@ -273,7 +274,6 @@ button {
   max-width: 100%;
   max-height: calc(100svh - var(--header-height) - 130px);
   margin: 0 auto;
-  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .home-project-cta {
@@ -287,24 +287,11 @@ button {
   text-transform: uppercase;
 }
 
-.home-project-cta svg {
-  width: 25px;
-  height: 25px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.35;
-  transition: transform 180ms ease;
-}
-
 .home-project-link:hover .home-project-media img,
 .home-project-link:focus-visible .home-project-media img {
   transform: scale(1.01);
 }
 
-.home-project-link:hover .home-project-cta svg,
-.home-project-link:focus-visible .home-project-cta svg {
-  transform: translateX(4px);
-}
 
 .project-page {
   overflow: visible;

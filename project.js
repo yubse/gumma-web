@@ -30,6 +30,25 @@ const projects = {
         height: 2000,
       },
     ],
+    next: "plant",
+  },
+  plant: {
+    title: "Silver Queen",
+    images: [
+      {
+        webp: "assets/plant-slides/1.webp?v=20260821-13",
+        fallback: "assets/plant-slides/1.jpg?v=20260821-13",
+        width: 2000,
+        height: 1499,
+      },
+      {
+        webp: "assets/plant-slides/2.webp?v=20260821-13",
+        fallback: "assets/plant-slides/2.jpg?v=20260821-13",
+        width: 1500,
+        height: 2000,
+      },
+    ],
+    next: "gumma",
   },
 };
 
@@ -38,8 +57,10 @@ const projectKey = searchParams.get("project") || "gumma";
 const project = projects[projectKey] || projects.gumma;
 const gallery = document.querySelector("[data-project-gallery]");
 const template = document.querySelector("#gallery-item-template");
+const nextProject = document.querySelector("[data-next-project]");
 
 document.title = `${project.title} — Gumma`;
+nextProject.href = `project.html?project=${project.next}`;
 
 function loadGalleryImage(figure) {
   if (figure.dataset.loaded === "true") return;
