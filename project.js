@@ -36,28 +36,16 @@ const projects = {
     title: "Silver Queen",
     images: [
       {
-        webp: "assets/plant-slides/1.webp?v=20260821-14",
-        fallback: "assets/plant-slides/1.jpg?v=20260821-14",
-        width: 1280,
-        height: 1715,
-      },
-      {
-        webp: "assets/plant-slides/2.webp?v=20260821-14",
-        fallback: "assets/plant-slides/2.jpg?v=20260821-14",
-        width: 1280,
-        height: 1715,
-      },
-      {
-        webp: "assets/plant-slides/3.webp?v=20260821-14",
-        fallback: "assets/plant-slides/3.jpg?v=20260821-14",
-        width: 1342,
-        height: 2000,
-      },
-      {
-        webp: "assets/plant-slides/4.webp?v=20260821-15",
-        fallback: "assets/plant-slides/4.jpg?v=20260821-15",
+        webp: "assets/plant-slides/1.webp?v=20260821-16",
+        fallback: "assets/plant-slides/1.jpg?v=20260821-16",
         width: 1280,
         height: 1706,
+      },
+      {
+        webp: "assets/plant-slides/2.webp?v=20260821-16",
+        fallback: "assets/plant-slides/2.jpg?v=20260821-16",
+        width: 1280,
+        height: 1715,
       },
     ],
     next: "gumma",
