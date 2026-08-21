@@ -6,26 +6,14 @@ const projects = {
     title: "Gumma",
     images: [
       {
-        webp: "assets/gumma-slides/1.webp?v=20260821-7",
-        fallback: "assets/gumma-slides/1.jpg?v=20260821-7",
-        width: 2000,
-        height: 1499,
-      },
-      {
-        webp: "assets/gumma-slides/2.webp?v=20260821-7",
-        fallback: "assets/gumma-slides/2.jpg?v=20260821-7",
-        width: 2000,
-        height: 1501,
-      },
-      {
-        webp: "assets/gumma-slides/3.webp?v=20260821-7",
-        fallback: "assets/gumma-slides/3.jpg?v=20260821-7",
+        webp: "assets/gumma-slides/3.webp?v=20260821-8",
+        fallback: "assets/gumma-slides/3.jpg?v=20260821-8",
         width: 1500,
         height: 2000,
       },
       {
-        webp: "assets/gumma-slides/4.webp?v=20260821-7",
-        fallback: "assets/gumma-slides/4.jpg?v=20260821-7",
+        webp: "assets/gumma-slides/4.webp?v=20260821-8",
+        fallback: "assets/gumma-slides/4.jpg?v=20260821-8",
         width: 1500,
         height: 2000,
       },

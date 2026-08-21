@@ -12,11 +12,26 @@
       type="image/webp"
       fetchpriority="high"
     />
-    <link rel="stylesheet" href="styles.css?v=20260821-7" />
-    <script src="script.js?v=20260821-7" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260821-8" />
+    <script src="drawer.js?v=20260821-8" defer></script>
+    <script src="script.js?v=20260821-8" defer></script>
   </head>
   <body>
     <header class="site-header">
+      <div class="header-left">
+        <button
+          class="drawer-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-drawer"
+          data-drawer-toggle
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
       <a class="logo" href="./" aria-label="Gumma 首页">
         <img src="assets/logo.png?v=20260819-2" alt="Gumma" />
       </a>
@@ -35,6 +50,20 @@
         </svg>
       </a>
     </header>
+
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <aside
+      class="site-drawer"
+      id="site-drawer"
+      aria-hidden="true"
+      tabindex="-1"
+      data-drawer
+    >
+      <nav class="drawer-nav" aria-label="Site navigation">
+        <span class="drawer-item">Blog</span>
+        <span class="drawer-item">Contact</span>
+      </nav>
+    </aside>
 
     <main class="home-main">
       <section
