@@ -157,6 +157,10 @@ button {
   place-items: center;
 }
 
+.slide-link picture source {
+  display: none;
+}
+
 .slide-link img {
   display: block;
   width: auto;
