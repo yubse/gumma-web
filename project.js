@@ -6,27 +6,27 @@ const projects = {
     title: "Gumma",
     images: [
       {
-        webp: "assets/gumma-slides/1.webp?v=20260821-4",
-        fallback: "assets/gumma-slides/1.jpg?v=20260821-4",
+        webp: "assets/gumma-slides/1.webp?v=20260821-6",
+        fallback: "assets/gumma-slides/1.jpg?v=20260821-6",
         width: 2000,
         height: 1499,
       },
       {
-        webp: "assets/gumma-slides/2.webp?v=20260821-4",
-        fallback: "assets/gumma-slides/2.jpg?v=20260821-4",
+        webp: "assets/gumma-slides/2.webp?v=20260821-6",
+        fallback: "assets/gumma-slides/2.jpg?v=20260821-6",
         width: 2000,
-        height: 1333,
+        height: 1501,
       },
       {
-        webp: "assets/gumma-slides/3.webp?v=20260821-4",
-        fallback: "assets/gumma-slides/3.jpg?v=20260821-4",
+        webp: "assets/gumma-slides/3.webp?v=20260821-6",
+        fallback: "assets/gumma-slides/3.jpg?v=20260821-6",
         width: 1500,
         height: 2000,
       },
       {
-        webp: "assets/gumma-slides/4.webp?v=20260821-4",
-        fallback: "assets/gumma-slides/4.jpg?v=20260821-4",
-        width: 1499,
+        webp: "assets/gumma-slides/4.webp?v=20260821-6",
+        fallback: "assets/gumma-slides/4.jpg?v=20260821-6",
+        width: 1500,
         height: 2000,
       },
     ],
@@ -82,7 +82,7 @@ project.images.forEach((imageData, index) => {
   figure.style.aspectRatio = `${imageData.width} / ${imageData.height}`;
   source.dataset.srcset = imageData.webp;
   image.dataset.src = imageData.fallback;
-  image.alt = `${project.title} 作品详情 ${index + 1}`;
+  image.alt = `${project.title} project detail ${index + 1}`;
   image.width = imageData.width;
   image.height = imageData.height;
 
