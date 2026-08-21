@@ -17,6 +17,18 @@ const projects = {
         width: 1500,
         height: 2000,
       },
+      {
+        webp: "assets/gumma-slides/5.webp?v=20260821-12",
+        fallback: "assets/gumma-slides/5.jpg?v=20260821-12",
+        width: 1500,
+        height: 2000,
+      },
+      {
+        webp: "assets/gumma-slides/6.webp?v=20260821-12",
+        fallback: "assets/gumma-slides/6.jpg?v=20260821-12",
+        width: 1500,
+        height: 2000,
+      },
     ],
   },
 };

@@ -149,7 +149,7 @@ button {
 
 .drawer-item {
   display: inline-block;
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 2.4vw, 1.75rem);
   line-height: 1;
   transition: opacity 180ms ease;
 }
@@ -225,7 +225,8 @@ button {
 .logo:focus-visible,
 .home-project-link:focus-visible,
 .project-navigation a:focus-visible,
-.coming-soon-navigation a:focus-visible {
+.coming-soon-navigation a:focus-visible,
+.contact-address a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
@@ -400,6 +401,20 @@ button {
   font-size: clamp(2rem, 6vw, 5rem);
   font-weight: 400;
   line-height: 1;
+}
+
+.coming-soon-main .contact-address {
+  max-width: calc(100vw - 64px);
+  font-size: clamp(1.15rem, 4vw, 3.5rem);
+  overflow-wrap: anywhere;
+}
+
+.contact-address a {
+  transition: opacity 180ms ease;
+}
+
+.contact-address a:hover {
+  opacity: 0.5;
 }
 
 .coming-soon-navigation {
