@@ -148,8 +148,20 @@ button {
 }
 
 .drawer-item {
+  display: inline-block;
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1;
+  transition: opacity 180ms ease;
+}
+
+.drawer-item:hover,
+.drawer-item:focus-visible {
+  opacity: 0.5;
+}
+
+.drawer-item:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
 }
 
 .drawer-open {
@@ -211,7 +223,6 @@ button {
 
 .instagram-link:focus-visible,
 .logo:focus-visible,
-.back-link:focus-visible,
 .slide-link:focus-visible,
 .carousel-dot:focus-visible,
 .project-navigation a:focus-visible {
@@ -348,23 +359,6 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.back-link svg {
-  width: 22px;
-  height: 22px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.4;
-}
-
 .project-main {
   width: min(100%, 1600px);
   margin: 0 auto;
@@ -430,6 +424,25 @@ button {
 
 .project-nav-link--next:hover svg {
   transform: translateX(4px);
+}
+
+.coming-soon-page {
+  min-height: 100svh;
+}
+
+.coming-soon-main {
+  display: grid;
+  min-height: calc(100svh - var(--header-height));
+  padding: 32px;
+  place-items: center;
+  text-align: center;
+}
+
+.coming-soon-main h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
 }
 
 @media (max-width: 640px) {
