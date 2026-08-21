@@ -176,6 +176,14 @@ button {
   transform: scale(1.015);
 }
 
+.slide-link--static {
+  cursor: default;
+}
+
+.slide-link--static:hover img {
+  transform: none;
+}
+
 .carousel-footer {
   position: absolute;
   z-index: 5;

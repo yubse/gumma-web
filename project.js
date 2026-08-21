@@ -6,49 +6,30 @@ const projects = {
     title: "Gumma",
     images: [
       {
-        webp: "assets/gumma-slides/1.webp?v=20260821-6",
-        fallback: "assets/gumma-slides/1.jpg?v=20260821-6",
+        webp: "assets/gumma-slides/1.webp?v=20260821-7",
+        fallback: "assets/gumma-slides/1.jpg?v=20260821-7",
         width: 2000,
         height: 1499,
       },
       {
-        webp: "assets/gumma-slides/2.webp?v=20260821-6",
-        fallback: "assets/gumma-slides/2.jpg?v=20260821-6",
+        webp: "assets/gumma-slides/2.webp?v=20260821-7",
+        fallback: "assets/gumma-slides/2.jpg?v=20260821-7",
         width: 2000,
         height: 1501,
       },
       {
-        webp: "assets/gumma-slides/3.webp?v=20260821-6",
-        fallback: "assets/gumma-slides/3.jpg?v=20260821-6",
+        webp: "assets/gumma-slides/3.webp?v=20260821-7",
+        fallback: "assets/gumma-slides/3.jpg?v=20260821-7",
         width: 1500,
         height: 2000,
       },
       {
-        webp: "assets/gumma-slides/4.webp?v=20260821-6",
-        fallback: "assets/gumma-slides/4.jpg?v=20260821-6",
-        width: 1500,
-        height: 2000,
-      },
-    ],
-    next: "plant",
-  },
-  plant: {
-    title: "Plant",
-    images: [
-      {
-        webp: "assets/plant-slides/1.webp?v=20260821-4",
-        fallback: "assets/plant-slides/1.jpg?v=20260821-4",
-        width: 2000,
-        height: 1499,
-      },
-      {
-        webp: "assets/plant-slides/2.webp?v=20260821-4",
-        fallback: "assets/plant-slides/2.jpg?v=20260821-4",
+        webp: "assets/gumma-slides/4.webp?v=20260821-7",
+        fallback: "assets/gumma-slides/4.jpg?v=20260821-7",
         width: 1500,
         height: 2000,
       },
     ],
-    next: "gumma",
   },
 };
 
@@ -57,10 +38,8 @@ const projectKey = searchParams.get("project") || "gumma";
 const project = projects[projectKey] || projects.gumma;
 const gallery = document.querySelector("[data-project-gallery]");
 const template = document.querySelector("#gallery-item-template");
-const nextProject = document.querySelector("[data-next-project]");
 
 document.title = `${project.title} — Gumma`;
-nextProject.href = `project.html?project=${project.next}`;
 
 function loadGalleryImage(figure) {
   if (figure.dataset.loaded === "true") return;

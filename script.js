@@ -18,7 +18,8 @@ if (carousel) {
       const isActive = slideIndex === currentIndex;
       slide.classList.toggle("is-active", isActive);
       slide.setAttribute("aria-hidden", String(!isActive));
-      slide.querySelector("a").tabIndex = isActive ? 0 : -1;
+      const link = slide.querySelector("a.slide-link");
+      if (link) link.tabIndex = isActive ? 0 : -1;
     });
 
     dots.forEach((dot, dotIndex) => {

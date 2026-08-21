@@ -8,11 +8,12 @@
     <link
       rel="preload"
       as="image"
-      href="assets/1.png?v=20260821-4"
+      href="assets/1.webp?v=20260821-7"
+      type="image/webp"
       fetchpriority="high"
     />
-    <link rel="stylesheet" href="styles.css?v=20260821-5" />
-    <script src="script.js?v=20260820-2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260821-7" />
+    <script src="script.js?v=20260821-7" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -54,15 +55,21 @@
               href="project.html?project=gumma"
               aria-label="查看 Gumma 小熊作品详情"
             >
-              <img
-                src="assets/1.png?v=20260821-4"
-                alt="Gumma 手绘小熊"
-                width="711"
-                height="1065"
-                loading="eager"
-                fetchpriority="high"
-                decoding="sync"
-              />
+              <picture>
+                <source
+                  srcset="assets/1.webp?v=20260821-7"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/1.png?v=20260821-7"
+                  alt="Gumma 手绘小熊"
+                  width="1055"
+                  height="1491"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="sync"
+                />
+              </picture>
             </a>
           </article>
 
@@ -72,27 +79,22 @@
             aria-hidden="true"
             data-slide
           >
-            <a
-              class="slide-link"
-              href="project.html?project=plant"
-              aria-label="查看 Gumma 植物作品详情"
-              tabindex="-1"
-            >
+            <div class="slide-link slide-link--static">
               <picture>
                 <source
-                  srcset="assets/2.webp?v=20260821-4"
+                  srcset="assets/1-2.webp?v=20260821-7"
                   type="image/webp"
                 />
                 <img
-                  src="assets/2.jpg?v=20260821-4"
-                  alt="Gumma 手绘盆栽"
-                  width="899"
-                  height="1200"
+                  src="assets/1-2.jpg?v=20260821-7"
+                  alt="Gumma 手绘小熊"
+                  width="506"
+                  height="727"
                   loading="lazy"
                   decoding="async"
                 />
               </picture>
-            </a>
+            </div>
           </article>
         </div>
 
