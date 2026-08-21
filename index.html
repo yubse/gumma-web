@@ -12,9 +12,8 @@
       type="image/webp"
       fetchpriority="high"
     />
-    <link rel="stylesheet" href="styles.css?v=20260821-9" />
+    <link rel="stylesheet" href="styles.css?v=20260821-11" />
     <script src="drawer.js?v=20260821-8" defer></script>
-    <script src="script.js?v=20260821-8" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -66,85 +65,48 @@
     </aside>
 
     <main class="home-main">
-      <section
-        class="carousel"
-        aria-label="精选作品"
-        aria-roledescription="carousel"
-        data-carousel
-      >
-        <div class="carousel-stage" aria-live="polite">
-          <article
-            class="carousel-slide is-active"
-            aria-label="1 / 2"
-            aria-hidden="false"
-            data-slide
+      <section class="home-gallery" aria-label="Featured artwork">
+        <article class="home-project home-project--portrait">
+          <a
+            class="home-project-link"
+            href="project.html?project=gumma"
+            aria-label="View the Gumma project"
           >
-            <a
-              class="slide-link"
-              href="project.html?project=gumma"
-              aria-label="查看 Gumma 小熊作品详情"
-            >
-              <picture>
-                <source
-                  srcset="assets/1.webp?v=20260821-7"
-                  type="image/webp"
-                />
-                <img
-                  src="assets/1.png?v=20260821-7"
-                  alt="Gumma 手绘小熊"
-                  width="1055"
-                  height="1491"
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="sync"
-                />
-              </picture>
-            </a>
-          </article>
+            <picture class="home-project-media">
+              <source srcset="assets/1.webp?v=20260821-7" type="image/webp" />
+              <img
+                src="assets/1.png?v=20260821-7"
+                alt="Gumma illustrated bear"
+                width="1055"
+                height="1491"
+                loading="eager"
+                fetchpriority="high"
+                decoding="sync"
+              />
+            </picture>
 
-          <article
-            class="carousel-slide"
-            aria-label="2 / 2"
-            aria-hidden="true"
-            data-slide
-          >
-            <div class="slide-link slide-link--static">
-              <picture>
-                <source
-                  srcset="assets/1-2.webp?v=20260821-7"
-                  type="image/webp"
-                />
-                <img
-                  src="assets/1-2.jpg?v=20260821-7"
-                  alt="Gumma 手绘小熊"
-                  width="506"
-                  height="727"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </article>
-        </div>
+            <span class="home-project-cta" aria-hidden="true">
+              <span>View Project</span>
+              <svg viewBox="0 0 32 32">
+                <path d="M6 16h19M18 9l7 7-7 7"></path>
+              </svg>
+            </span>
+          </a>
+        </article>
 
-        <div class="carousel-footer">
-          <div class="carousel-dots" aria-label="选择作品">
-            <button
-              class="carousel-dot is-active"
-              type="button"
-              aria-label="显示第 1 张作品"
-              aria-current="true"
-              data-carousel-dot="0"
-            ></button>
-            <button
-              class="carousel-dot"
-              type="button"
-              aria-label="显示第 2 张作品"
-              aria-current="false"
-              data-carousel-dot="1"
-            ></button>
-          </div>
-        </div>
+        <article class="home-project home-project--landscape">
+          <picture class="home-project-media">
+            <source srcset="assets/2.webp?v=20260821-11" type="image/webp" />
+            <img
+              src="assets/2.png?v=20260821-11"
+              alt="Handcrafted plant in warm sunlight"
+              width="1448"
+              height="1086"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </article>
       </section>
     </main>
   </body>
